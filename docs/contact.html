@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Developer Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #E9F3FA;
+      color: #333;
+    }
+
+    header {
+      background-color: #B2D3EB;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      color: #003B5B;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .contact-info, .contact-form {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+      max-width: 500px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+      color: #0072A8;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+
+    .socials a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #0072A8;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 90%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #0072A8;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #005B86;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #B2D3EB;
+      color: #003B5B;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Me</h1>
+    <p>Let's build something amazing together</p>
+  </header>
+
+  <div class="container">
+    <div class="contact-info">
+      <h2>Developer Information</h2>
+      <p><strong>Name:</strong> hamza</p>
+      <p><strong>Email:</strong>hamza@gmail.com</p>
+      <p><strong>Phone:</strong> +1 (234) 567-8901</p>
+      <p><strong>Location:</strong> New York, USA</p>
+      <p><strong>Available for:</strong> Freelance Projects, Collaborations</p>
+      <p><strong>Skills:</strong> Web Development, UI/UX Design, JavaScript, Node.js, React</p>
+      <p class="socials">
+        <strong>Connect:</strong><br>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Portfolio</a>
+      </p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form method="post" action="/message"  onsubmit="return handleSubmit(event)" id="form">
+        <input type="text" placeholder="Your Name" required name="name" id="name">
+        <input type="email" placeholder="Your Email" required name="email" id="email">
+        <input type="text" placeholder="Subject" required name="reason" id="reason">
+        <textarea rows="6" placeholder="Your Message" required name="message" id="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Jane Doe | All rights reserved
+  </footer>
+<script>
+function handleSubmit(event){
+
+  setTimeout(() => {
+  document.getElementById("form").reset();
+  }, 200);
+  return true;
+}
+</script>
+</body>
+</html>

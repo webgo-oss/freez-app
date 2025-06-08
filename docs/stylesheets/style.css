@@ -1,0 +1,590 @@
+
+        @font-face {
+            font-family: logofont;
+            src: url('../fonts/IceSkatersSans-9MvEB.ttf');
+        }
+        @font-face {
+            font-family: content;
+            src: url('../fonts/CsalondradrawnRegularDemo-2v3e8.otf');
+        }
+        @font-face {
+            font-family: text;
+            src: url('../fonts/QueensidesLight-ZVj3l.ttf');
+        }
+        body {
+            overflow-x: hidden;
+            height: 200vh;
+            background-image:url('../images/backimage.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            background-color:#B2D3EB;
+            margin: 0;
+        }
+  
+        .cloud {
+            position: fixed;
+            width: 900px;
+            height: 800px;
+            transition: transform 0.1s ease-out;
+        }
+        .section1{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+        }
+        .logo{
+            width:40%;
+            text-align: center;
+        }
+        .logo h1{
+            text-transform: capitalize;
+            font-family: logofont;
+            font-size: 90px;
+      
+            color: white;
+            background-image: url('../images/text2.png');
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+           -webkit-text-stroke:  0.001px whitesmoke;
+           filter:drop-shadow(0 0 10px rgba(58, 122, 155, 0.8))
+      
+        }
+      
+        .cloud-right {
+            right: 0%;
+            z-index: -2;
+            height: 900px;
+        }
+        .cloud-left{
+            z-index: -1;
+        }
+
+        .bigb{
+            height: 450px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+        }
+        .text{
+            width: 80%;
+            height: 20%;
+            display: flex;
+            text-transform: capitalize;
+            justify-content: start;
+            align-items: center;
+            color: aliceblue;
+            -webkit-text-stroke: 0.5px black;
+        }
+        .sideimg{
+            height: 100px;
+        }
+        .sideimg img{
+            width: inherit;
+            height: inherit;
+            border-radius: 20px;
+        }
+        .text span{
+            color: #4474a3;
+            
+        }
+      .word{
+        background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 30%;
+      }
+      .wordtext{
+        display: flex;
+       justify-content: center;
+      }
+      .wordtext h1{
+        font-size: 80px;
+      font-family: text;
+  text-transform: capitalize;
+      }
+      .wordtext img{
+        width: 0px;
+        transition: 0.5s;
+        border-radius: 10px;
+      }
+      .wordtext:hover img{
+        width: 300px;
+      }
+      .sec1{
+        width: 100%;
+        height: 600px;
+        /* background: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .sec1 h1{
+        font-family: content;
+        text-transform: capitalize;
+        font-size: 60px;
+     text-align: center;
+      }
+      .deblicate{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .deblicate img{
+        width: 900px;
+        transition: 1.1s;
+        opacity: 0;
+      }
+      .innerdubli{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+      }
+      .innerdubli p{
+        width: 50%;
+        text-transform: capitalize;
+        font-size: 23px;
+        line-height: 40px;
+        font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: normal;
+      }
+      .deblicate1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .deblicate1 img{
+        width: 900px;
+        transition: 1.1s;
+        opacity: 0;
+      }
+    .container {
+      background: white;
+      width: 100%; 
+      height: 1500px;
+      position: absolute;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: -1;
+      mask-image: linear-gradient(
+        to top, 
+        rgba(178, 211, 235, 0) 0%, 
+        rgba(178, 211, 235, 0.5) 13%, 
+        #B2D3EB 28% 
+    );
+    }
+    .inner {
+      background:#B2D3EB ;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 20;
+      transition: width 0.2s, height 0.2s;
+    }
+
+    .boss {
+      display: flex;
+      justify-content: space-around;
+      width: 100px;
+      height: auto;
+      margin-top: 20%;
+    }
+
+    .inner1 {
+      width: 300px;
+      background-color:#a2b8da;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .inner1 img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .inner1 p {
+      margin: 10px 0;
+      color: white;
+    }
+
+    .inner1 a {
+      color: black;
+      font-size: 20px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 1% 0 0 0;
+    }
+    .effect{
+      width: 100%;
+      background-color:#B2D3EB;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+     
+    }
+    .effect h1{
+      color: white;
+      font-size: 340px;
+      text-align: center;
+      text-transform: capitalize;
+      font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    margin-top: 2%;
+  
+    }
+    .con{
+      width: 100%;
+      height: 600px;
+      margin-top: -30%;
+      display: flex;
+      justify-content: end;
+      align-items: end;
+    }
+    .card-main{
+      position: absolute;
+      width: 1050px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .card-element{
+      width: 280px;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+    }
+    .card-element iconify-icon{
+      font-size: 50px;
+    }
+    .card-element p{
+      font-size: 20px;
+      text-align: center;
+      width: 80%;
+    }
+    .alternative{
+ display: none;
+    }
+    .dark{
+      width: 100%;
+      height: 1000px;
+      background-image: linear-gradient(#B2D3EB,#00a0f4);
+      display: flex;
+      justify-content: space-around;
+    }
+    .block{
+      width:100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .foocontent{
+      width: inherit;
+      height: 500px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+
+    }
+    .foocontent h2{
+      font-size: 40px;
+      text-transform: capitalize;
+      font-family: content;
+      text-align: center;
+    }
+    .foocontent a{
+      font-size: x-large;
+      text-transform: capitalize;
+      text-align: center;
+      color: black;
+      text-decoration: none;
+    }
+   
+    .head{
+      display: flex;
+flex-wrap: wrap;
+   justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      height: 100px; 
+    }
+    .box{
+      width: 120px;
+      height: 120px;
+    }
+@media(max-width:1024px) {
+      .cloud{
+        width: 1500px;
+        height: 1450px;
+      }
+      .cloud-right{
+        left: 0;
+      }
+   
+      .section1{
+        height: 65%;
+        width: 100%;
+      }
+      .logo{
+        width: 70%;
+      }
+         .logo h1{
+            font-size: 120px;
+        }
+        .word{
+          margin-top: 15%;
+        }
+        .wordtext h1{
+          font-size: 50px;
+        }
+          .wordtext:hover img{
+        width: 200px;
+      }
+      .sec1 h1{
+        font-size: 50px;
+      }
+      .deblicate{
+        height: 500px;
+      }
+      .deblicate img{
+        width: 700px;
+      }
+      .innerdubli p{
+        width: 80%;
+      }
+      .deblicate1{
+       height: 500px;
+      }
+      .deblicate1 img{
+        width: 700px;
+      }
+      .boss{
+        flex-wrap: wrap;
+      }
+      .container{
+        height: 1600px;
+      }
+      .inner1{
+        margin-bottom: 10px;
+      }
+      .effect{
+        height: 800px;
+      }
+        .effect h1{
+      font-size: 230px;
+    }
+        .con{
+      margin-top: -40%;
+        }
+        .card-main{
+          width: 900px;
+        }
+         .foocontent h2{
+      font-size: 30px;
+
+    }
+    .foocontent a{
+      font-size: large;
+    }
+    }
+@media(max-width:768px){
+        body{
+          background-size: 100% 100%;
+        }
+         .logo h1{
+            font-size: 70px;
+        }
+        .cloud-right{
+          display: none;
+        }
+        .cloud-left{
+         height: 900px;
+        }
+        .text{
+          font-size: 10px;
+            -webkit-text-stroke: 0.3px black;
+            margin-bottom: 15px;
+        }
+        .sideimg img{
+          height: 80px;
+        }
+        .word{
+          margin-top: 5%;
+        }
+         .wordtext h1{
+          font-size: 40px;
+        }
+          .wordtext:hover img{
+        width: 150px;
+      }
+        .deblicate img{
+        width: 550px;
+        transition: 1.1s;
+        opacity: 0;
+      }
+     .innerdubli{
+      width: 100%;
+     }
+      .innerdubli p{
+        width: 100%;
+        font-size: 17px;
+        line-height: 40px;
+        text-align: center;
+      }
+      .deblicate1 img{
+        width: 550px;
+        transition: 1.1s;
+        opacity: 0;
+      }
+        .effect h1{
+      font-size: 170px;
+    }
+    #con{
+      display: none
+    }
+    .alternative{
+      display: flex;
+      margin-top: -40%;
+    }
+     .card-main{
+      width:100%
+    }
+    .card-element{
+      width: 250px;
+      height: 250px;
+    }
+    .card-element iconify-icon{
+      font-size: 30px;
+    }
+    .card-element p{
+      font-size: 18px;
+    }
+    .dark{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20%;
+      justify-content: end;
+    }
+    .block{
+      height: 40%;
+    }
+}
+@media(max-width:426px){
+    .logo h1{
+            font-size: 60px;
+        }
+  .cloud-left{
+    height: 800px;
+    width: 700px;
+  }
+    .deblicate{
+        flex-direction: column;
+      }
+       .deblicate1{
+        flex-direction: column-reverse;
+      }
+      .bigb{
+        display: none
+      }
+       .wordtext h1{
+          font-size: 20px;
+        }
+          .wordtext:hover img{
+        width: 100px;
+      }
+        .container { 
+      height:1800px;
+    align-items: start;
+    padding-top: 50%;
+  }
+  .effect{
+  display: none;
+  }
+  .alternative{
+    display: none;
+  }
+  .dark{
+    margin-top: 70%;
+  }
+    .deblicate img{
+        width: 420px;
+      }
+            .innerdubli p{
+              width: 70%;
+        font-size: 20px;
+        line-height: 20px;
+      
+      }
+      .deblicate1 img{
+        width: 400px;
+      }
+      .word{
+        height:400px ;
+      }
+}
+@media(max-width:425px){
+   .deblicate img{
+        width: 300px;
+      }
+       .deblicate1 img{
+        width: 300px;
+      }
+}
+@media(max-width:320px){
+   .cloud-left{
+     height: 700px;
+    width: 500px;
+   }
+   .wordtext h1{
+    font-size: 16px;
+   }
+    .wordtext:hover img{
+        width: 80px;
+      }
+      .container{
+        padding-top: 90%;
+         height:2000px;
+      }
+      .dark{
+    margin-top: 150%;
+  }
+
+    .foocontent h2{
+      font-size: 30px;
+    }
+    .foocontent a{
+      font-size: large;
+    }
+   
+    .head{
+      height: 300px; 
+    }
+}
