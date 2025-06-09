@@ -1,4 +1,7 @@
+* {
+  box-sizing: border-box;
 
+}
         @font-face {
             font-family: logofont;
             src: url('../fonts/IceSkatersSans-9MvEB.ttf');
@@ -165,6 +168,9 @@
         transition: 1.1s;
         opacity: 0;
       }
+      .alternative{
+        display: none;
+      }
     .container {
       background: white;
       width: 100%; 
@@ -202,14 +208,14 @@
 
     .inner1 {
       width: 300px;
-      background-color:#a2b8da;
+      background-color:transparent;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       padding: 10px;
       border-radius: 10px;
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+
 
     }
 
@@ -238,7 +244,7 @@
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
-     
+      margin-top: 110%;
     }
     .effect h1{
       color: white;
@@ -288,8 +294,92 @@
       text-align: center;
       width: 80%;
     }
-    .alternative{
- display: none;
+    .card-container {
+      display: none;
+      flex-wrap: wrap;
+      padding-top: 20%;
+        justify-content: space-around; 
+  align-items: center;    
+      height: 100%;
+       gap: 20px;
+      
+    }
+.card-wrapper {
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+    margin-top: 30px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-wrapper:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: none;
+}
+
+.flip-card-front {
+ background-color: #6c90b8;}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #a2b8da;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.flip-card-back img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.flip-card-back a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #222;
+  margin: 10px 0 5px;
+}
+.flip-card-back p {
+  font-size: 0.9rem;
+  color: whitesmoke;
+}
+
+    .heading{
+      display: none;
+    }
+    .heading h1{
+      text-align: center;
+      text-transform: capitalize;
+        font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    font-size:50px;
     }
     .dark{
       width: 100%;
@@ -339,6 +429,15 @@ flex-wrap: wrap;
     .box{
       width: 120px;
       height: 120px;
+    }
+    .box1{
+
+      width: 120px;
+      height: 120px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      font-size: 70px;
     }
 @media(max-width:1024px) {
       .cloud{
@@ -397,6 +496,7 @@ flex-wrap: wrap;
       }
       .effect{
         height: 800px;
+        margin-top: 160%;
       }
         .effect h1{
       font-size: 230px;
@@ -416,6 +516,7 @@ flex-wrap: wrap;
     }
     }
 @media(max-width:768px){
+  
         body{
           background-size: 100% 100%;
         }
@@ -464,6 +565,9 @@ flex-wrap: wrap;
         transition: 1.1s;
         opacity: 0;
       }
+      .effect{
+        margin-top: 210%;
+      }
         .effect h1{
       font-size: 170px;
     }
@@ -498,6 +602,37 @@ flex-wrap: wrap;
     }
 }
 @media(max-width:426px){
+    .card-wrapper {
+    width: 100%;
+    max-width: 300px;
+    height: 320px;
+    margin: 50px 0;
+  }
+
+  .card-container {
+    padding: 20px 10px;
+    gap: 15px;
+    justify-content: center;
+  }
+  .box{
+    display: none;
+  }
+  .box1{
+    display: flex;
+  }
+  .inner1{
+    margin-top: 20%;
+  }
+  .container{
+    display: none;
+  }
+  .card-container{
+    display: flex;
+    height: 1000px;
+  }
+  .heading{
+    display: flex;
+  }
     .logo h1{
             font-size: 60px;
         }
@@ -532,7 +667,7 @@ flex-wrap: wrap;
     display: none;
   }
   .dark{
-    margin-top: 70%;
+    margin-top: 160%;
   }
     .deblicate img{
         width: 420px;
@@ -557,8 +692,12 @@ flex-wrap: wrap;
        .deblicate1 img{
         width: 300px;
       }
+    
 }
 @media(max-width:320px){
+    .heading h1{
+      font-size: 40px;
+    }
    .cloud-left{
     width: 600px;
    }
@@ -566,7 +705,7 @@ flex-wrap: wrap;
     font-size: 14px;
    }
     .wordtext:hover img{
-        width: 80px;
+        width: 70px;
       }
       .container{
         padding-top: 90%;
@@ -586,4 +725,16 @@ flex-wrap: wrap;
     .head{
       height: 300px; 
     }
+     .inner1 {
+      width: 250px;
+    }
+
+    .inner1 img {
+      height: 180px;
+    }
+
+    .inner1 a {
+      font-size: 18px;
+
+    } 
 }
