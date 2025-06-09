@@ -560,7 +560,7 @@ flex-wrap: wrap;
 }
 @media(max-width:320px){
    .cloud-left{
-     height: 700px;
+     height: 800px;
     width: 500px;
    }
    .wordtext h1{
