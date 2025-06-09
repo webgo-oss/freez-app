@@ -31,8 +31,8 @@ loader.load(
   (gltf) => {
     model = gltf.scene
     model.scale.set(1, 1, 1)
-    model.position.set(0,-30,0);
-    model.rotation.set(0.6,-1.5,0);
+    model.position.set(0,-40,0);
+    model.rotation.set(0.6,-1.5,0.7);
     scene.add(model)
   },
   undefined,
